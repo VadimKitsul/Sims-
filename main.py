@@ -71,27 +71,13 @@ class Human:
             self.gladness += 10
             self.satiety += 2
     def chill(self):
-        if self.car.drive():
-            pass
-        else:
-            self.to_repair()
-            return
-            self.gladness += 10
-            self.mess += 5
+        self.gladness += 10
+        self.mess += 5
     def clean_home(self):
-        if self.car.drive():
-            pass
-        else:
-            self.to_repair()
-            return
         self.gladness -= 5
-        self.mess = 0
+        self.home.mess = 0
     def to_repair(self):
-        if self.car.drive():
-            pass
-        else:
-            return
-        self.car = 1
+        self.car.strength += 100
         self.money -= 50
 
     def days_indexes(self, day):
