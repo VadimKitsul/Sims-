@@ -72,7 +72,7 @@ class Human:
             self.satiety += 2
     def chill(self):
         self.gladness += 10
-        self.mess += 5
+        self.home.mess += 5
     def clean_home(self):
         self.gladness -= 5
         self.home.mess = 0
