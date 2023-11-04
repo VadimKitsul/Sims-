@@ -5,7 +5,6 @@ brands_of_car = {
     "Lada": {'fuel': 40, "strength": 20, 'consumption': 12},
     "Volvo": {'fuel': 60, "strength": 150, 'consumption': 10}
 }
-
 print(list(brands_of_car))
 
 brand = random.choice(list(brands_of_car))
